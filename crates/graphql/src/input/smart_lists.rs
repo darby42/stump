@@ -33,6 +33,7 @@ impl Default for SmartListsInput {
 #[derive(
 	PartialEq, Eq, Copy, Hash, Debug, Clone, Default, Enum, Serialize, Deserialize,
 )]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub enum SmartListGroupJoiner {
 	#[default]
 	And,
